@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+
+::-webkit-scrollbar{
+    width: 3px;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgba(174, 0, 255, 100%);
+}
+
+
+
+.pb{
+    background-color: white;
+    color: black;
+}
+.mainn{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 105vh;
+    font-size: 3em;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.sobre{
+    font-size: 40px;
+    margin: 30px;
+}
+
+.flex{
+    display: flex;
+}
+.works{
+    display: block;
+}
+
+.red{
+    border: 1px solid blue;
+    width: 5em;
+    height: 5em;
+    margin: 5px 0px 5px 20px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.redv{
+    opacity: 1;
+}
