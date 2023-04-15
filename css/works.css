@@ -1,0 +1,37 @@
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tipo-work{
+    text-align: center;
+}
+
+.work{
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    margin: 40px;
+    display: inline-block;
+    font-size: 50px;
+    transform: translateZ(-100%);
+}
+
+.workv{
+    opacity: 1;
+    transform: translateZ(0%);
+    transition: all 2.5s;
+}
+
+.work:hover{
+    transform: scale(1.09);
+    transition: 1.7s;
+}
+
+.work img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
