@@ -10,6 +10,24 @@
 }
 body{
     background-color: black;
+    cursor: none;
+}
+
+@media (max-width: 600px){
+    .work{
+        border: 1px solid blue;
+        width: 250px;
+        height: 250px;
+        display: block;
+        opacity: 0;
+        transition: all 1.5s;
+    }
+    #home, #about{
+        font-size: 34px;
+    }
+    .sobre{
+        font-size: 25px;
+    }
 }
 
 ::-webkit-scrollbar{
@@ -22,8 +40,6 @@ body{
     border-radius: 5px;
     background-color: rgba(174, 0, 255, 100%);
 }
-
-
 
 .pb{
     background-color: white;
@@ -55,20 +71,41 @@ body{
 
 .flex{
     display: flex;
-}
-.works{
-    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.red{
-    border: 1px solid blue;
-    width: 5em;
-    height: 5em;
-    margin: 5px 0px 5px 20px;
-    display: inline-block;
+.tipo-work{
+    text-align: center;
+}
+
+.work{
+    width: 200px;
+    height: 200px;
     opacity: 0;
+    margin: 40px;
+    display: inline-block;
+    font-size: 50px;
+    transform: translateZ(-100%);
 }
 
-.redv{
+.workv{
     opacity: 1;
+    transform: translateZ(0%);
+    transition: all 2.5s;
+}
+
+.work:hover{
+    transform: scale(1.09);
+    transition: 1.7s;
+}
+
+.work img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+}
+
+.link{
+    text-decoration: none;
 }

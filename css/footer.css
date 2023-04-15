@@ -1,0 +1,52 @@
+
+footer{
+    background-color: rgb(82, 0, 121);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    cursor: none;
+}
+
+.container-contato{
+}
+.contato{
+    display: inline;
+    margin-right: 15px;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.linkedin, .github{
+    display: inline-block;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.linkedin:hover{
+    background-image: url('../imgs/linkedin-logo-pintado.png');
+}
+.github:hover{
+    background-image: url('../imgs/github-logo-pintado.png');
+}
+
+.github:hover, .linkedin:hover{
+    transition: 0.8s;
+    transform: scale(1.07);
+}
+
+footer img:hover{
+    opacity: 0;
+    transition: ease 0.2s;
+}
