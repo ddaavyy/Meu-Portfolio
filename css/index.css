@@ -31,7 +31,6 @@ body{
 ::-webkit-scrollbar{
     width: 3px;
     background-color: transparent;
-    -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -39,14 +38,12 @@ body{
     background-color: rgba(174, 0, 255, 0.534);
 }
 
-.pb{
-    background-color: white;
-    color: black;
-}
+
 .mainn{
-    display: grid;
-    place-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 105vh;
     font-size: 3em;
 }
@@ -61,6 +58,12 @@ body{
     opacity: 1;
     transform: translateX(0%);
 }
+
+.pb{
+    background: white;
+    color: black;
+}
+
 
 .sobre{
     font-size: 40px;

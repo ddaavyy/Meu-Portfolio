@@ -2,7 +2,6 @@
 .flex{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .tipo-work{
@@ -16,12 +15,10 @@
     margin: 40px;
     display: inline-block;
     font-size: 50px;
-    transform: translateZ(-100%);
 }
 
 .workv{
     opacity: 1;
-    transform: translateZ(0%);
     transition: all 2.5s;
 }
 

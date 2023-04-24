@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/works.css">
-        <link rel="icon" href="./imgs/icon.png">
+        <link rel="stylesheet" href="./css/game.css">
+        <link rel="icon" href="./imgs/davy-avatar.png">
+        <script src="./js/index.js" defer></script>
+        <script src="./js/game.js"></script>
     </head>
 <body>
     <!--
@@ -16,7 +19,6 @@
         Bem-vindo ao meu código!!!!
 
     -->
-    <section>
         <!-- Inicio - Apresentação -->
         <div class="mainn hidden">Ola, eu sou Davy
             <p style="color: rgba(174, 0, 255, 100%); font-size: 1.5em;">Front-End Developer</p>
@@ -28,9 +30,9 @@
         </div>
         <!--  -->
         <!-- Conhecimentos -->
-        <section class="mainn hidden" id="work" style="min-height: 25vh;">Conhecimentos
-        </section>
-        <section class="flex" style="min-height: 80vh">
+        <div class="mainn hidden" id="work" style="min-height: 25vh;">Conhecimentos
+        </div>
+        <div class="flex" style="min-height: 80vh">
             <div class="blocos">
                 <div class="work">
                     <P class="tipo-work html">HTML</P>
@@ -49,8 +51,10 @@
                     <img class="jss-logo" src="./imgs/js-logo.png" alt="Logo do JavaScript">
                 </div>
             </div>
-        </section>
-    </section>
+        </div>
+    <!--  -->
+    <!-- Game -->
+    <canvas class="game"></canvas>
     <!--  -->
     <!-- Rodapé -->
     <footer>
@@ -71,8 +75,6 @@
                 </div>
             </div>
     </footer>
-    <!--  -->
-    <!-- JS -->
-    <script src="index.js"></script>
+    <!--  -->   
 </body>
 </html>
