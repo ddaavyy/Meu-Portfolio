@@ -1,11 +1,11 @@
 
 footer{
-    background-color: rgba(27, 27, 27, 0.37);
+    background-color: rgba(26, 26, 26, 0.767);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    padding-bottom: 35px;
+    height: 90px;
+    padding-bottom: 25px;
 }
 
 footer a{
