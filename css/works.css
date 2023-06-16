@@ -19,16 +19,35 @@
 
 .workv{
     opacity: 1;
-    transition: all 2.5s;
+    transition: all 1s;
 }
 
 .work:hover{
     transform: scale(1.09);
-    transition: 1.7s;
+    transition: 0.6s;
+}
+
+.work img{
+    transition: 1s;
+}
+
+.work:hover img{
+    transform: rotate(360deg);
+    transition: 2s;
 }
 
 .work img{
     width: 200px;
     height: 200px;
     border-radius: 30%;
+}
+
+
+@media (max-width: 835px){
+    .flex{
+        display: grid;
+    }
+    footer{
+        margin-top: 80px;
+    }
 }

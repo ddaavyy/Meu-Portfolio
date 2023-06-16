@@ -69,3 +69,8 @@ body{
     font-size: 40px;
     margin: 30px;
 }
+
+.front{
+    color: rgba(174, 0, 255, 100%); 
+    font-size: 1.5em;
+}

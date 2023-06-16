@@ -1,0 +1,84 @@
+.containerHeader{
+    top: -12.1%;
+    align-items: center;
+    height: 8vw;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgba(44, 44, 44, 0.459);
+    justify-content: center;
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
+}
+
+.containerHeader a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.containerHeader a:hover{
+    color: rgb(226, 164, 255);
+    transition: 0.5s;
+}
+
+.containerHeader:hover{
+    top: 0;
+    transition: 0.5s;
+}
+
+
+.menu{
+    display: inline-block;
+}
+
+.menu a{
+    padding: 20px;
+    font-size: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu a:hover{
+    background-color: rgba(102, 11, 145, 0.562);
+}
+
+
+
+.linkedin, .github{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 4px;
+    transition: 0.6s;
+    display: flex;
+    right: 100%;
+}
+
+.linkedin{
+    background-image: url('../imgs/linkedin-logo.png');
+}
+.github{
+    background-image: url('../imgs/github-logo.png');
+}
+
+header img:hover{
+    opacity: 1;
+}
+
+header img{
+    width: 50.1px;
+    height: 50.1px;
+    border-radius: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+@media (max-width: 760px){
+    .containerHeader{
+        display: none;
+    }
+}
