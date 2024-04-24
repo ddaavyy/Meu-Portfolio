@@ -35,7 +35,7 @@ body{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 5px;
-    background-color: rgba(174, 0, 255, 0.534);
+    background-color: #FFDE59;
 }
 
 
@@ -45,7 +45,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 105vh;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 .hidden{
@@ -71,6 +71,28 @@ body{
 }
 
 .front{
-    color: rgba(174, 0, 255, 100%); 
-    font-size: 1.5em;
+    color: #FFDE59; 
+    font-size: 0.5em;
 }
+
+/* Davy Animado */
+.davy-efeito{
+    font-size: 100px;
+    background: linear-gradient(45deg,#f6d76b, #ff9036, #d6254d, #ff5475, #fdeba9);
+    background-size: 400% 100%;
+    animation: animacao-degrade-davy 15s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@keyframes animacao-degrade-davy {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 400%;
+    }
+}
+
+/* -------------- */
