@@ -95,6 +95,20 @@ body{
     }
 }
 
+/* ---- portfolios ------ */
+.container-port{
+    font-size: 45px;
+    font-weight: 450;
+    margin-top: 250px;
+}
+
+.portfolios, .container-port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* -------------- */
 
 .comigo{
