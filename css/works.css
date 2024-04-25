@@ -2,6 +2,7 @@
 .flex{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tipo-work{
@@ -43,11 +44,3 @@
 }
 
 
-@media (max-width: 835px){
-    .flex{
-        display: grid;
-    }
-    footer{
-        margin-top: 80px;
-    }
-}

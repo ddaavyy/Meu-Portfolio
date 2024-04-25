@@ -28,12 +28,12 @@
                     <ul>
                         <li><a id="text_header-home" href="#">Home</a></li>
                         <li><a id="text_header-sobre" href="#about">Sobre</a></li>
-                        <li><a id="text_header-hab" href="#">Habilidades</a></li>
+                        <li><a id="text_header-hab" href="#work">Habilidades</a></li>
                         <li><a id="text_header-port" href="#">Portfólios</a></li>
                     </ul>
                 </nav>
                 <div id="text_header-contato" class="container-contato">
-                    <a href="#"><button>Contato</button></a>
+                    <a href="#contato"><button>Contato</button></a>
                 </div>
             </div>
         </div>
@@ -41,19 +41,66 @@
 
     <!--          -->
         <!-- Inicio - Apresentação -->
-        <div class="mainn hidden davyy" id="davy">Ola, eu sou <div class="davy-efeito">Davy</div>
+        <div class="mainn hidden davyy" id="davy">Olá, eu sou <div class="davy-efeito">Davy</div>
             <!--<p class="front">Estagiário de Dados</p> -->
         </div>
         <!--  -->
         <!-- Sobre Mim -->
-        <div class="mainn pb" id="about"><h3 class="hidden pb" style="color: #070707;">Sobre mim</h3>
-            <p class="hidden pb sobre">Sabe aquelas crianças que cresceram na frente de um computador, que passava a tarde toda em uma Lan-House jogando com os amigos, é, esta foi uma parte da minha vida. Ganhei meu primeiro computador com sete anos de idade, e em pouco tempo usando, percebi que um computador era mais que apenas usado para jogos, descobri o mundo virtual "infinito", a Internet.<br><br> Na minha mente naquela época para saber como funcionava um computador era entender as suas peças, então desde pequenininho eu ja abria meu computador e ficava fuçando ele, todo curioso para saber oque era cada peça. Meu primeiro contato com a programação ocorreu em 2020 com a linguagem Python, desde la venho aprendendo linguagens novas e suas funcionalidades.<br><br>Estudo Front-End a mais ou menos um ano, e busco sempre a aprimorar mais e mais as minhas habilidades e aprender coisas novas. Gosto de ter um conhecimento muito amplo em relações as coisas, por isso sempre estou aprendendo alguma tecnologia ou tecnica nova, como alguma linguagem, framework e ate teclas de atalho pra ajudar nessa vida de programador. Minha meta é virar um Full-Stack Developer, porem, sei que ainda tenho muito oque aprender, mas, o ceu é o limite! </p>
-        </div>
+        <div class="mainn pb" id="about"><h5 class="hidden pb">Sobre</h5>
+            <div class="hidden pb sobre">Sou estudante de Engenharia da Computação
+                no Centro Universitário Celso Lisboa. Estou buscando
+                oportunidades como Estagiário em Análise de Dados para
+                aplicar e expandir meus conhecimentos na área, com
+                disponibilidade a qualquer horário e a início imediato. <br><br>
+                Com experiência prévia como Estagiário no Fórum da
+                Comarca de Mauá, desenvolvi habilidades de
+                organização, atendimento ao cliente e gestão de
+                documentos, tanto físicos quanto digitais. Além disso,
+                adquiri proficiência em Python e ETL (Extract, Transform,
+                Load), fundamentais para análise e manipulação de
+                dados.<br><br>
+                Meu conjunto de habilidades também inclui o domínio do
+                Microsoft Excel, Word e PowerPoint, assim como experiência
+                em SQL e PL SQL para manipulação de bancos de dados.
+                Possuo ainda conhecimento em ferramentas como Power
+                BI e conceitos fundamentais de programação orientada a
+                objetos e lógica de programação.<br><br>
+                Com o objetivo de me manter atualizado com as
+                demandas do mercado, participei de cursos
+                complementares em diversas áreas, incluindo o básico de
+                segurança cibernética e computação em nuvem.<br><br>
+                Estou entusiasmado para contribuir com uma equipe
+                dinâmica e colaborativa, aplicando meu aprendizado
+                acadêmico e prático para impulsionar projetos de análise
+                de dados. Estou aberto a desafios e comprometido em
+                aprender e crescer profissionalmente.
+                Se você procura um estagiário dedicado, com sólidos
+                conhecimentos em análise de dados e uma paixão por
+                tecnologia, estou pronto para fazer parte do seu time.</div>
+        </div><br><br><br><br><br><br>
         <!--  -->
         <!-- Conhecimentos -->
-        <div class="mainn hidden" id="work" style="min-height: 25vh;">Conhecimentos
+        <div class="mainn hidden" id="work" style="min-height: 25vh;">Habilidades
         </div>
         <div class="flex" style="min-height: 80vh">
+            <div class="blocos">
+                <div class="work">
+                    <P class="tipo-work html">Python</P>
+                    <img class="python-logo" src="./imgs/python-logo.png" alt="Logo do Python">
+                </div>
+            </div>
+            <div class="blocos">
+                <div class="work">
+                    <P class="tipo-work html">SQL</P>
+                    <img class="sql-logo" src="./imgs/sql-logo.png" alt="Logo do SQL">
+                </div>
+            </div>
+            <div class="blocos">
+                <div class="work">
+                    <P class="tipo-work html">PowerBI</P>
+                    <img class="powerbi-logo" src="./imgs/powerbi-logo.png" alt="Logo do PowerBI">
+                </div>
+            </div>
             <div class="blocos">
                 <div class="work">
                     <P class="tipo-work html">HTML</P>
@@ -73,17 +120,20 @@
                 </div>
             </div>
         </div>
-    <!--  -->
-    <!-- Rodapé 
-    <footer id="contato">
-            <div class="container-contato">
-                <div class="contato">
-                    E-mail para contato: otaldodavy@gmail.com
-                    <p>Feito por: Davy Peres</p>
-                </div>
-                
+    <!-- Contato  -->
+    <section class="container-falecomigo" id="contato">
+        <div class="contato">
+            <div class="cont-interface">
+                <h3 style="font-size: 50px;">Fale<span class="comigo"> Comigo</span></h3>
+                <form action="./php/email.php" method="post">
+                    <input type="text" name="nome" id="" placeholder="Seu nome:" required>
+                    <input type="text" name="email" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="telefone" id="" placeholder="Seu celular:">
+                    <textarea name="texto" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btnc-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
             </div>
-    </footer>
-      -->   
+        </div>
+    </section> 
 </body>
 </html>

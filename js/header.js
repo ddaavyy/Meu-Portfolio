@@ -1,4 +1,4 @@
-window.addEventListener("scroll", function(){
+/*window.addEventListener("scroll", function(){
     var header = document.querySelector('#header')
     header.classList.toggle('header-cor', window.scrollY > 550 & window.scrollY < 1600)
 
@@ -17,3 +17,4 @@ window.addEventListener("scroll", function(){
     var text_header = document.querySelector("#text_header-contato")
     text_header.classList.toggle('text_header-contato', window.scrollY > 550 & window.scrollY < 1600)
 })
+*/

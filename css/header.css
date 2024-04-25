@@ -1,13 +1,21 @@
+@media (max-width: 1000px) {
+    header{
+        display: none;
+    }
+}
+
 header{
     width: 100%;
-    padding: 15px 25%;
+    padding: 10px 25%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: #ff880138;
     backdrop-filter: blur(10px);
     transition: .5s;
+    font-weight: 600;
+    height: 12%;
 }
 .flexflex{
     display: flex;
@@ -15,24 +23,28 @@ header{
     justify-content: space-between;
 }
 
-header i{
-    font-size: 30px;
-}
-
 header ul{
     list-style-type: none;
+    display: flex;
+    position: relative;
 }
 
 header ul li{
     display: inline-block;
     margin: 0 25px;
+    position: relative;
 }
 
 header ul li a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 27px;
     color: #ffcc02;
     position: relative;
+    background: linear-gradient(45deg,#f6d76b, #ff9036, #d6254d, #ff5475, #fdeba9);
+    background-size: 400% 100%;
+    animation: animacao-degrade-davy 15s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav a::after{
@@ -52,12 +64,19 @@ nav a:hover::after{
 
 .container-contato button{
     width: 120px;
-    height: 40px;
+    height: 45px;
     border: 0;
-    background-color: #FFDE59;
+    background-color: rgba(160, 87, 27, 0.438);
     cursor: pointer;
     transition: .3s;
     font-size: 20px;
+    font-weight: 600;
+    color: #ee8453;
+    position: relative;
+    font-size: 22.5px;
+}
+.container-contato button:hover{
+    background-color: rgba(128, 70, 22, 0.438);
 }
 
 header.header-cor{
@@ -82,3 +101,4 @@ header.header-cor{
     transition: .3s;
     color: #FFDE59;
 }
+
